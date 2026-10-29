@@ -1,0 +1,73 @@
+/* Colores de la pagina anterior (estilo.css) aplicados sobre Bootstrap */
+:root {
+  --azul-ficha: #1f5f9b;
+  --azul-ficha-oscuro: #174675;
+  --bs-primary: #1f5f9b;
+  --bs-primary-rgb: 31, 95, 155;
+  --bs-link-color: #1f5f9b;
+  --bs-link-color-rgb: 31, 95, 155;
+  --bs-link-hover-color: #174675;
+  --bs-link-hover-color-rgb: 23, 70, 117;
+  --fondo-pagina: #f2f4f7;
+}
+
+body {
+  background-color: var(--fondo-pagina);
+}
+
+.bg-ficha {
+  background-color: var(--azul-ficha);
+}
+
+.border-ficha {
+  border-color: var(--azul-ficha) !important;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--azul-ficha);
+  --bs-btn-border-color: var(--azul-ficha);
+  --bs-btn-hover-bg: var(--azul-ficha-oscuro);
+  --bs-btn-hover-border-color: var(--azul-ficha-oscuro);
+  --bs-btn-active-bg: var(--azul-ficha-oscuro);
+  --bs-btn-active-border-color: var(--azul-ficha-oscuro);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--azul-ficha);
+  --bs-btn-border-color: var(--azul-ficha);
+  --bs-btn-hover-bg: var(--azul-ficha);
+  --bs-btn-hover-border-color: var(--azul-ficha);
+  --bs-btn-active-bg: var(--azul-ficha-oscuro);
+  --bs-btn-active-border-color: var(--azul-ficha-oscuro);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--azul-ficha);
+}
+
+.portada {
+  background: linear-gradient(135deg, var(--azul-ficha), var(--azul-ficha-oscuro));
+}
+
+.imagen-inicio {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+
+/* Panel de administracion */
+.menu-admin {
+  flex-shrink: 0;
+}
+
+@media (min-width: 992px) {
+  .menu-admin {
+    width: 240px;
+    min-height: 100vh;
+  }
+}
+
+.min-w-0 {
+  min-width: 0;
+}
